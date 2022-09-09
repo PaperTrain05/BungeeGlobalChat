@@ -1,0 +1,3 @@
+name: GlobalChat
+version: '${project.version}'
+main: io.paper.globalchat.Main

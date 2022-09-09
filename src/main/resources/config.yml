@@ -1,0 +1,6 @@
+#Main Config
+
+CommandClickEvent: "send %player% %server%"
+TextHoverEvent: "&dSlayer &cGlobalChat"
+
+GlobalChatPrefix: "&c(&7Global&c)&l&7» "

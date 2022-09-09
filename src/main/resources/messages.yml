@@ -1,0 +1,11 @@
+# Messages Config
+
+Prefix: "&c(&7Global&c)&l&7Â» "
+ServerNameFormat: "&7&o[%serverName%]"
+ConsoleServer: "&8[&cNo Server&8]"
+ConsoleNameFormat: "&b&lCONSOLE &f"
+InsuffArgs: "%prefix% &cInsufficient Arguments! Please use:\n&7/global <message>"
+InsuffArgsSuggestionHover: "&7&oClick to suggest command!"
+OnlyPrefixMSG: "%prefix% &cYou can't globalchat an empty message!"
+NoPermsMSG: "%prefix% &cYou are not allowed to do that!"
+GlobalFormat: "%prefix% &c%player_name%&l&7» &f%message%"
