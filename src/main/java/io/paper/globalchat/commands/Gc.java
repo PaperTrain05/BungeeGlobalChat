@@ -27,7 +27,7 @@ public class Gc extends Command {
     public void execute(final CommandSender sender, final String[] args) {
         if (sender instanceof ProxiedPlayer) {
             final ProxiedPlayer player = (ProxiedPlayer)sender;
-            if (!player.hasPermission("globalx.globalchat.use")) {
+            if (!player.hasPermission("globalchatbungee.globalchat.use")) {
                 player.sendMessage((BaseComponent)new TextComponent(ColorUtils.color(ConfigManager.getMessagesConfig().getString("NoPermsMSG").replace("%prefix%", ConfigManager.getMessagesConfig().getString("Prefix")))));
                 return;
             }

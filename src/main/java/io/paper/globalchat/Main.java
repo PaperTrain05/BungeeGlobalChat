@@ -14,10 +14,17 @@ public final class Main extends Plugin {
 
     public void onEnable() {
         Main.INSTANCE = this;
+        ConfigManager();
+        Commands();
+    }
+    public void ConfigManager(){
         ConfigManager.createMainConfig();
         ConfigManager.registerMainConfig();
         ConfigManager.createMessageConfig();
         ConfigManager.registerMessageConfig();
+    }
+
+    public void Commands(){
         ProxyServer.getInstance().getPluginManager().registerCommand((Plugin)this, (Command)new Gc());
         ProxyServer.getInstance().getPluginManager().registerListener((Plugin)this, (Listener)new ChatListener());
     }

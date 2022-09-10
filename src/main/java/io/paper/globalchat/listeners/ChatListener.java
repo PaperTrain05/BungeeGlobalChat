@@ -22,7 +22,7 @@ public class ChatListener implements Listener {
             final ProxiedPlayer p = (ProxiedPlayer) e.getSender();
             if (e.getMessage().startsWith(ConfigManager.getMainConfig().getString("GlobalChatPrefix"))) {
                 if (!e.getMessage().contentEquals(ConfigManager.getMainConfig().getString("GlobalChatPrefix"))) {
-                    if (p.hasPermission("globalx.globalchat.use")) {
+                    if (p.hasPermission("globalchatbungee.globalchat.use")) {
                         e.setCancelled(true);
                         final TextComponent broadcast = new TextComponent(ColorUtils.color(ConfigManager.getMessagesConfig().getString("GlobalFormat").replace("%prefix%", ColorUtils.color(ConfigManager.getMessagesConfig().getString("Prefix"))).replace("%serverNameFormat%", ColorUtils.color(ConfigManager.getMessagesConfig().getString("ServerNameFormat").replace("%serverName%", p.getServer().getInfo().getName()))).replace("%player_name%", ColorUtils.color(p.getDisplayName())).replace("%message%", ColorUtils.color(e.getMessage().replace("!", "")))));
                         broadcast.setClickEvent(new ClickEvent(ClickEvent.Action.RUN_COMMAND, ConfigManager.getMainConfig().getString("CommandClickEvent").replace("%player%", p.getDisplayName()).replace("%target%", p.getServer().getInfo().getName())));
